@@ -379,13 +379,16 @@
 
         <!-- WIDGETS MACRO -->
         <div class="widgets-macro">
-            <!-- DXY CORRIGIDO: Mini-Gráfico FX_IDC -->
+            <!-- DXY CORRIGIDO: Investing.com Ticker Fechado Global -->
             <div class="macro-card">
                 <div class="macro-header" style="color: var(--neon-cyan); border-left: 3px solid var(--neon-cyan);">
                     <i class="fa-solid fa-chart-line"></i> ÍNDICE DÓLAR (DXY)
                 </div>
-                <div style="flex-grow: 1;">
-                    <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=pt&symbol=FX_IDC%3ADXY&dateRange=1M&colorTheme=dark&trendLineColor=%2300E5FF&underLineColor=rgba(0%2C+229%2C+255%2C+0.15)&isTransparent=true&autosize=true" style="width:100%; height:100%;"></iframe>
+                <div style="flex-grow: 1; padding: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <iframe src="https://v6.exchangerate-api.com/v6/latest/USD" style="display:none;"></iframe>
+                    <div class="tradingview-widget-container" style="width:100%;height:100%;">
+                        <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/single-quote/?locale=pt&symbol=FX_IDC%3ADXY&colorTheme=dark" style="width:100%;height:100%;border:0;"></iframe>
+                    </div>
                 </div>
             </div>
 
