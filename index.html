@@ -166,7 +166,7 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            height: 260px;
+            height: 280px;
             transition: all 0.3s ease;
         }
         .macro-card:hover { border-color: rgba(0, 229, 255, 0.3); transform: translateY(-2px); }
@@ -379,12 +379,13 @@
 
         <!-- WIDGETS MACRO -->
         <div class="widgets-macro">
+            <!-- DXY CORRIGIDO: Advanced Chart TradingView -->
             <div class="macro-card">
                 <div class="macro-header" style="color: var(--neon-cyan); border-left: 3px solid var(--neon-cyan);">
                     <i class="fa-solid fa-chart-line"></i> ÍNDICE DÓLAR (DXY)
                 </div>
                 <div style="flex-grow: 1;">
-                    <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/mini-symbol-overview/?locale=pt&symbol=TVC%3ADXY&dateRange=1M&colorTheme=dark&trendLineColor=%2300E5FF&underLineColor=rgba(0%2C+229%2C+255%2C+0.15)&isTransparent=true&autosize=true" style="width:100%; height:100%;"></iframe>
+                    <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/advanced-chart/?locale=pt&symbol=TVC%3ADXY&interval=D&colorTheme=dark&style=1&timezone=Europe%2FLisbon&isTransparent=true&hide_side_toolbar=1" style="width:100%; height:100%;"></iframe>
                 </div>
             </div>
 
